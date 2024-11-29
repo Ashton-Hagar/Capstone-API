@@ -4,6 +4,8 @@ import mysql from 'mysql2';
 const app = express();
 const port = 5000;
 
+app.use(cors()); 
+
 // MySQL connection details
 const db = mysql.createConnection({
     host: 'sql5.freesqldatabase.com',
